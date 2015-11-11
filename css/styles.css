@@ -1,0 +1,28 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+  color: white;
+  font-size: 32px
+}
+img{
+  background-color: #0273D4 !important;
+  border: 0px solid #fff !important;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.15) !important;
+}
+.firma{
+  line-height: 2em !important;
+}
+a{
+  color: white !important;
+  text-decoration:none !important;
+  font-weight: bold !important;
+}
+.size400 p{
+  text-align: justify;
+}
+
+.size400 p strong{
+  text-decoration: underline;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.red2323 { color: #e23237; }

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+    <!--Aca tu puedes poner el titulo de la presentación-->
+		<title>Angular 2.0</title>
+		<meta name="description" content="Angular 2.0">
+		<meta name="author" content="Sebastian Gomez">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Ninguno de los elementos anteriores es necesario que lo modifiques si no es necesario -->
+      <!-- Cada etiqueta section que se encuentre adentro del <div class="slides"> representará a una diapositiva  de la presentación -->
+			<div class="slides">
+				<section data-background="#0273D4">
+					<img data-src="images/inicial.png"/>
+				<div class="firma">
+				<a href="http://www.sebastian-gomez.com">Sebastian Gomez</a> - <a href="https://twitter.com/sebasagar">@sebasagar</a><br/>
+				Magister en ingeniería de sistemas e informática<br/> "Apasionado por la web y el desarrollo móvil" <br/> CTO de <a href="http://www.sponzor.me">Sponzor.ME</a></a>
+				</div>
+				</section>
+				<section  data-background="#0273D4">
+					<h1>Agenda</h1>
+					<ul>
+						<li>Qué es esto de Angular 2.0?</li>
+						<li>Qué significa esto para mi proyecto?</li>
+						<li>Demo</li>
+					</ul>
+				</section>
+				<section  data-background="#0273D4">
+					<h2>Historia</h2>
+					<ul>
+						<li>El equipo de AngularJS tomo la decisión de cambiar drásticamente a AngularJS.</li>
+						<li class="fragment">Google y en general los developers de Angular querían un mejor framework:</li>
+						<ul class="fragment"><li>Curva de aprendizaje menor</li><li>Mejorar el Desempeño</li></ul>
+						<li class="fragment">Anunciado ng-conf el 13 de Marzo de 2015</li>
+						<li class="fragment">Hasta hoy se han liberado al rededor de 44 releases.</li>
+					</ul>
+				</section>
+				<section  data-background="#0273D4">
+					<div class="inline">
+					<div class="size400">
+						<img data-src="images/angular1.png"/><br/>
+						<p>
+						“AngularJS en su versión 1 se define a si mismo como un <strong>conjunto de librerías</strong> de Javascript para la creación de aplicaciones web”<p>
+					</div>
+					<div class="size400">
+						<img data-src="images/angular2.png"/><br/>
+						<p>“Angular 2 se define a si mismo como una <strong>plataforma</strong> para creación de aplicaciones web y aplicaciones <strong>móviles</strong>”<p>
+					</div>
+					</div>
+				</section>
+				<section  data-background="#0273D4">
+					<h1>Qué es lo nuevo?</h1>
+					<ul>
+						<li>MOBILE FIRST</li>
+						<li>FUTURE READY ECMAScript 6 (ES6) Y TYPESCRIPT</li>
+						<li>FLEXIBLE DEVELOPMENT</li>
+						<li>SPEED & PERFORMANCE</li>
+						<li>SIMPLE & EXPRESSIVE</li>
+						<li>COMPREHENSIVE ROUTING</li>
+						<li>ANIMATIONS</li>
+						<li>HIERARCHICAL DEPENDENCY INJECTION</li>
+						<li>SUPPORT FOR WEB COMPONENTS</li>
+						<li>INTERNATIONALIZATION (I18N) & ACCESSIBILITY</li>
+					</ul>
+				</section>
+				<section  data-background="#0273D4">
+					<h2><i class="material-icons md-48 red2323">stay_primary_portrait</i>Mobile First <i class="material-icons md-48 red2323">stay_primary_portrait</i></h2>
+					<ul>
+						<li>Filosofía</li>
+						<li>Sistema de routing específico para aplicaciones móviles.</li>
+						<li>Código de la aplicación liviano.</li>
+						<li>Óptimo desempeño debido a que usa poca memoria.</li>
+						<li>Soporte de gestos, toques y giros en el celular.</li>
+					</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">fast_forward</i> Future Ready <i class="material-icons md-48 red2323">fast_forwardt</i></h2>
+						<ul>
+							<li>Angular 2 está escrito sobre el último estándar de Javasctipt ECMAScript V6.</li>
+							<li>Compilado sobre a <a target="_blank" href="http://www.typescriptlang.org/">TypeScript</a>.</li>
+							<li>Soporte para clases, el operador => , let y const</li>
+							<li>Nuevas maneras de asignar objetos, valores por defecto, módulos y más.</li>
+						</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">favorite</i> Flexible Development <i class="material-icons md-48 red2323">favorite</i></h2>
+						<ul>
+							<li>Ofrece retrocompatibilidad y funcionalidad con:</li>
+							<ul>
+								<li>ECMAScript V5.</li>
+								<li>Dart.</li>
+								<li>CoffeeScript u otros lenguajes que compilen Javascript.</li>
+							</ul>
+						</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">av_timer</i> Speed and performance <i class="material-icons md-48 red2323">av_timer</i></h2>
+						<ul>
+								<li>Detección de Cambio 5 veces más rápido.</li>
+								<li>Usa el estándar mas modernos de Javascript.</li>
+								<li>Immutables and observables.</li>
+							</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">code</i> SIMPLE & EXPRESSIVE <i class="material-icons md-48 red2323">code</i></h2>
+						<ul>
+								<li>Permite escribir código limpio y natural.</li>
+								<li>Reduce la complejidad para el equipo de desarrollo.</li>
+								<li>Código altamente legible y entendibles.</li>
+							</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">call_split</i> COMPREHENSIVE ROUTING <i class="material-icons md-48 red2323">call_split</i></h2>
+						<ul>
+								<li>Mapeo de URLS y componentes de la aplicación.</li>
+								<li>Transiciones entre URLS.</li>
+								<li>Rutas hermanas.</li>
+								<li>Rutas anidadas.</li>
+							</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">flip</i> ANIMATIONS <i class="material-icons md-48 red2323">flip</i></h2>
+						<ul>
+								<li>Conjunto de animaciones compatibles.</li>
+								<li>API de animación.</li>
+								<li>secuencias complejas de animación.</li>
+								<li>Rutas anidadas.</li>
+							</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">apps</i> HIERARCHICAL DEPENDENCY INJECTION <i class="material-icons md-48 red2323">apps</i></h2>
+						<ul>
+								<li>Mantener tu código modular.</li>
+								<li>Código Mantenible y extensible.</li>
+								<li>Probar tu código de la manera correcta.</li>
+							</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">web</i> WEB COMPONENTS <i class="material-icons md-48 red2323">web</i></h2>
+						<ul>
+								<li>Ofrece la creación e integración de web components.</li>
+								<li>Similar a Polimer y X-Tags.</li>
+								<li>Cambiar el DOM en tiempo real.</li>
+							</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h2><i class="material-icons md-48 red2323">accessibility</i> INTERNATIONALIZATION (I18N) & ACCESSIBILITY <i class="material-icons md-48 red2323">accessibility</i></h2>
+						<ul>
+								<li>Permite usar características de traducción.</li>
+								<li>Pluralización.</li>
+								<li>Reglas de género.</li>
+							</ul>
+					</section>
+					<section  data-background="#0273D4">
+						<h1>Qué significa esto para mi proyecto?</1>
+						<h3><span class="fragment">Cambio, </span><span class="fragment">Migración, </span><span class="fragment">Ajuste, </span><span class="fragment">Conversión, </span><span class="fragment">Dolor, </span><span class="fragment">Sufrimiento, </span><span class="fragment">Pérdida de dinero, </span><span class="fragment">Pérdida de tiempo,</span> <span class="fragment">... </span><span class="fragment">...,</span> <span class="fragment">La Muerte</span></h3>
+					</section>
+					<section  data-background="#0273D4">
+							<img data-src="images/wat.png"/>
+					</section>
+					<section  data-background="#0273D4">
+							<h2>Component-Based UI</h2>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 32px; overflow:hidden;">
+angular.module("example")
+    .controller("ExampleCtrl", function() {
+});</code></pre>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 30px; overflow:hidden;">
+var AppComponent = ng.Component({
+	selector: 'my-app',
+	template: '<h1>My First Angular 2 App</h1>'
+})
+.Class({
+	constructor: function () { }
+});</code></pre>
+					</section>
+<section  data-background="#0273D4">
+		<h2>Sintaxis de eventos asociados a los inputs</h2>
+<pre><code class="html" data-trim contenteditable style="font-size: 24px; overflow:hidden;"><!--button ng-click="thing.submit(item)" type="submit"--></code></pre>
+<pre><code class="html" data-trim contenteditable style="font-size: 24px; overflow:hidden;"><!--button (click)="submit(item)" type="submit"--></code></pre>
+</section>
+<section  data-background="#0273D4">
+		<h2>Adiós al $scope</h2>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 24px; overflow:hidden;">angular.module("example").controller("ExampleCtrl", function($scope) {
+    $scope.name = "John Smith";
+});</code></pre>
+<pre><code class="javascript" data-trim contenteditable style="font-size: 24px; overflow:hidden;">
+(function() {
+var AppComponent = ng
+.Component({
+selector: 'my-app',
+template: '<h1>My First Angular 2 App</h1>'
+})
+.Class({
+constructor: function () {
+    this.name = "John Smith";
+}
+})();</code></pre>
+</section>
+<section  data-background="#0273D4">
+		<h1>demo</h1>
+		<h2>Estado Actual: Developer Preview versión 44</h2>
+</section>
+<section  data-background="#0273D4">
+	<h2><a href="http://www.sebastian-gomez.com/desarrollo-web/angular-2-con-javascript-hola-mundo-parte-3/" target="_blank">Hola Mundo en Angular 2</a></h2>
+	<ol>
+			<li>Instalar <a href="http://nodejs.org" target="_blank">NodeJS</a></li>
+			<li>Inicializar NodeJS <code>npm init -y</code></li>
+			<li>Cambiar el package.json para incluir Angular</li>
+			<li>Instalar las dependencias</li>
+			<li>Crear nuestro archivo app.js</li>
+			<li>Crear nuestro archivo index.html</li>
+			<li>Correr <code>npm start</code></li>
+		</ol>
+</section>
+<section  data-background="#0273D4">
+		<h2>Más Ejemplos y Referencias</h2>
+		<p><a href="http://angular.io" target="_blank">Sitio Oficial de Angular 2</a></p>
+		<p><a href="http://www.syntaxsuccess.com/angular-2-samples/" target="_blank">Ejemplos sobre los componentes de Angular 2, No Oficial</a></p>
+
+		<p><a href="http://www.sebastian-gomez.com/desarrollo-web/angular-2-con-javascript-hola-mundo-parte-3/" target="_blank">Hola Mundo Angular 2 (Propio)</a></p><a href="http://www.sebastian-gomez.com/desarrollo-web/angular-2-aplicacion-que-saluda-parte-4/" target="_blank">Aplicación que saluda Angular 2 (Propio)</a></p>
+</section>
+<section data-background="#0273D4">
+	<h1>Gracias</h1>
+	<img data-src="images/inicial.png"/>
+<div class="firma">
+<a href="http://www.sebastian-gomez.com">Sebastian Gomez</a><br/><a href="https://twitter.com/sebasagar">Sígueme en twitter: @sebasagar</a><br/>
+<a href="http://www.sebastian-gomez.com">Visita mi sitio web: www.sebastian-gomez.com</a>
+<br/> Visita <a href="http://www.sponzor.me">Sponzor.ME</a></a>
+</div>
+</section>
+			</div>
+		</div>
+    <!--El siguiente codigo son los archivos requeridos por reveal.js para funcioanr correctamente, ademas provee una serie de configuraciones con las cuales se puede jugar un poco más adelante-->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script type="text/javascript" src="plugin/highlight/highlight.js"></script>
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

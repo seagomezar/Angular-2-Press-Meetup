@@ -1,0 +1,15 @@
+{
+  "name": "Angular-2-Press-Meetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "Sebastian Gomez",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^0.8.2"
+  }
+}
